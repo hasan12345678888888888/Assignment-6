@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="top.css">
+</head>
+<body>
+    <form>
+        <div class="step-indicator">
+            <table>
+                <tr>
+                    <td class="step active">Step 1: Account Details</td>
+                    <td class="step">Step 2: Personal Details</td>
+                    <td class="step">Step 3: Review Section</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <fieldset>
+                <legend>Accounts</legend>
+                <label for="emailadd">Email Address:</label><br>
+                <input type="text" id="emailadd" name="email address" placeholder="enter email address" required><br><br>
+                <label for="Passwd">Password:</label><br>
+                <input type="password" id="passwd" name="password" placeholder="enter password" required><br><br>
+                <label for="confirmPD">Confirm Password:</label><br>
+                <input type="password" id="confirmPD" name="confirm password" placeholder="enter password again" required><br><br>
+                
+                <div class="button-container">
+                    <a href="index.html" class="back-button">
+                        <img src="../public/images/back button.jpg" alt="Back" class="button-image">
+                    </a>
+                    <button type="submit" formaction="personals details.html">
+                        <img src="../public/images/submit button.jpg" alt="Submit" class="button-image">
+                    </button>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

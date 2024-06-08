@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="step-indicator">
+            <table>
+                <tr>
+                    <td class="step step1 active">Step 1: Account Details</td>
+                    <td class="step step2 active">Step 2: Personal Details</td>
+                    <td class="step">Step 3: Review Section</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <fieldset>
+                <label for="FirstNm">First Name:</label><br>
+                <input type="text" id="FirstNm" name="First Name" placeholder="enter first name" required="required"><br>
+                <label for="LastNm">Last Name:</label><br>
+                <input type="text" id="LastNm" name="Last Name" placeholder="enter last name" required="required"><br><br>
+                <label for="cnic">CNIC Section:</label><br>
+                <div class="cnic-container">
+                    <input type="text" id="cnic1" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic2" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic3" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic4" name="cnic" maxlength="1" size="1" required>-
+                    <input type="text" id="cnic5" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic6" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic7" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic8" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic9" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic10" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic11" name="cnic" maxlength="1" size="1" required>
+                    <input type="text" id="cnic12" name="cnic" maxlength="1" size="1" required>-
+                    <input type="text" id="cnic13" name="cnic" maxlength="1" size="1" required>
+                </div><br>
+                <label for="social-link">Social Link:</label><br>
+                <input type="url" id="social-link" name="social link" placeholder="enter Facebook and LinkedIn profile link" size="30"><br><br>
+                <div class="button-container">
+                    <a href="account.html" class="back-button">
+                        <img src="../public/images/back button.jpg" alt="Back" class="button-image">
+                    </a>
+                    <button type="submit" formaction="reviews.html">
+                        <img src="../public/images/submit button.jpg" alt="Submit" class="button-image">
+                    </button>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

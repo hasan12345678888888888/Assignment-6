@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa; 
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step-indicator table {
+    width: 100%;
+}
+
+.step {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.step.step1.active {
+    background-color: #00ff00; 
+}
+
+.step.step2.active {
+    background-color: #0000ff; 
+}
+
+.step:not(.active) {
+    background-color: #6c757d; 
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    max-width: 400px; 
+}
+
+fieldset {
+    border: none; 
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; 
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+}
+
+.cnic-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cnic-container input[type="text"] {
+    width: 20px; 
+    text-align: center;
+    padding: 5px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.back-button {
+    text-decoration: none;
+}
+
+.button-image {
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+button[type="submit"] {
+    background-color: #28a745; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; 
+}
